@@ -221,6 +221,7 @@ pip install konlpy
   ```bash
   pip install mecab_python-0.996_ko_0.9.2_msvc-cp37-cp37m-win_amd64.whl
   conda list
+  ```
 ```
   
   ```python
@@ -229,7 +230,7 @@ pip install konlpy
   mecab.morphs("네, 안녕하세요. 반갑습니다.")
   mecab.nouns("질문이나 건의사항은 깃헙 이슈 트래커에 남겨주세요.")
   mecab.pos("오류보고는 실행환경, 에러메세지와함께 설명을 최대한상세히!^^")
-  ```
+```
 
 
 
@@ -266,5 +267,7 @@ l.clear()
 
 # Lesson 3: NLP with Scikit-learn
 
-## To be continued
+## CountVectorizer & TfidfVectorizer
+
+[Text_Feature_Extraction.ipynb](Text_Feature_Extraction.ipynb)
 
