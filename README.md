@@ -125,7 +125,7 @@ jupyter lab
   ```bash
   conda search konlpy
   pip search konlpy
-pip install konlpy
+  pip install konlpy
   pip show konlpy
   conda list
   ```
@@ -278,4 +278,3 @@ l.clear()
 ## CountVectorizer & TfidfVectorizer
 
 [Text_Feature_Extraction.ipynb](Text_Feature_Extraction.ipynb)
-
