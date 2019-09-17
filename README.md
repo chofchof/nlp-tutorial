@@ -101,7 +101,7 @@ jupyter lab
   ```bash
   type test.txt
   conda install m2-libiconv m2-libintl
-  iconv -f UTF-8 -t CP949 test_cp949.txt
+  iconv -f UTF-8 -t CP949 test.txt > test_cp949.txt
   type test_cp949.txt
   ```
 
@@ -133,22 +133,28 @@ pip install konlpy
   ```python
   import konlpy
   kkma = konlpy.tag.Kkma()
+  
   kkma.morphs("네, 안녕하세요. 반갑습니다.")
+  
   kkma.nouns("질문이나 건의사항은 깃헙 이슈 트래커에 남겨주세요.")
+
   kkma.pos("오류보고는 실행환경, 에러메세지와함께 설명을 최대한상세히!^^")
   ```
-
+  
   ```python
   import konlpy
   mecab = konlpy.tag.Mecab()
+  
   mecab.morphs("네, 안녕하세요. 반갑습니다.")
+  
   mecab.nouns("질문이나 건의사항은 깃헙 이슈 트래커에 남겨주세요.")
+  
   mecab.pos("오류보고는 실행환경, 에러메세지와함께 설명을 최대한상세히!^^")
   ```
 
 
 
-### [한국어 형태소 분석기 성능 비교](https://iostream.tistory.com/144)
+### 한국어 형태소 분석기 성능 비교 (https://iostream.tistory.com/144)
 
 - 사용할 데이터의 특성(띄어쓰기 유무 등)이나 개발 환경(Python, Java)에 따라서 적합한 형태소 분석기를 고려해야함
 
@@ -210,7 +216,6 @@ pip install konlpy
 
   ```bash
   unzip mecab-ko-dic-msvc.zip -d c:/mecab
-  conda remove m2-unzip
   ```
 
 ### [Pusnow](https://www.pusnow.com) / mecab-python-msvc
@@ -222,15 +227,18 @@ pip install konlpy
   pip install mecab_python-0.996_ko_0.9.2_msvc-cp37-cp37m-win_amd64.whl
   conda list
   ```
-```
+
   
   ```python
   import konlpy
   mecab = konlpy.tag.Mecab()
+  
   mecab.morphs("네, 안녕하세요. 반갑습니다.")
+  
   mecab.nouns("질문이나 건의사항은 깃헙 이슈 트래커에 남겨주세요.")
+  
   mecab.pos("오류보고는 실행환경, 에러메세지와함께 설명을 최대한상세히!^^")
-```
+  ```
 
 
 
